@@ -17,18 +17,18 @@ app.get("/", (req, res) => {         //routing!!
     res.send("server is running.");  //when someone visits, they will receive the message
 });
 
-io.on('connection', (socket) => {
-    socket.emit('me', socket.id);
+io.on('connection', (socket) => {    //sockets for real time data transmission
+    socket.emit('me', socket.id);    //once we connect, we have to emit a message of "me"
 
-    socket.on('disconnect', () => {
+    socket.on('disconnect', () => {     //disconnecting will broadcast the message of callended
         socket.broadcast.emit("callended");
     })
 
-    socket.on("calluser", ({ userToCall, signalData, from, name }) => {
-        io.to(userToCall).emit("calluser", {signal: signalData, from, name });
+    socket.on("calluser", ({ userToCall, signalData, from, name }) => {  //calling someone!
+        io.to(userToCall).emit("calluser", {signal: signalData, from, name }); //now passing all the data
     })
 
-    socket.on("answercall", (data) => {
+    socket.on("answercall", (data) => {   // answering! then will emit message of callaccepted
         io.to(data.to).emit("callaccepted", data.signal);
     })
 })
