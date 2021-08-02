@@ -30,7 +30,7 @@ const VideoPlayer = () => {
 
     return (
         <Grid container className={classes.gridContainer}>
-            {/*our own video*/}
+            
 
             {
                 stream && (
