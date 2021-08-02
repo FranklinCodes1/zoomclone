@@ -32,8 +32,7 @@ const VideoPlayer = () => {
         <Grid container className={classes.gridContainer}>
             
 
-            {
-                stream && (
+            {stream && (
             
             <Paper className={classes.paper}>
                 <Grid item xs={12} md={6}>
@@ -52,7 +51,7 @@ const VideoPlayer = () => {
 
             {/* users video */}
 
-            { callAccepted && !callEnded && (
+            {callAccepted && !callEnded && (
             <Paper className={classes.paper}>
                 <Grid item xs={12} md={6}>
                     <Typography variant="h5" gutterBottom>{call.name || 'Name'}
@@ -70,4 +69,4 @@ const VideoPlayer = () => {
     )
 }
 
-export default VideoPlayer
+export default VideoPlayer;

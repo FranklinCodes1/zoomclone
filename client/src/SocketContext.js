@@ -65,7 +65,7 @@ const ContextProvider = ({ children }) => {
 
 
         peer.on('signal', (data) => {
-            socket.emit('calluser', { userToCall: id, signalData: data, from: me, name});
+            socket.emit('callUser', { userToCall: id, signalData: data, from: me, name});
         });
 
         peer.on('stream', (currentStream) => {
@@ -73,7 +73,7 @@ const ContextProvider = ({ children }) => {
 
         });
 
-        socket.on('callaccepted', (signal) => {
+        socket.on('callAccepted', (signal) => {
             setCallAccepted(true);
 
             peer.signal(signal);
@@ -112,9 +112,9 @@ const ContextProvider = ({ children }) => {
             {children}
 
         </SocketContext.Provider>
-    )
+    );
 
 
-}
+};
 
 export { ContextProvider, SocketContext };
