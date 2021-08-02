@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/zoomclone/static/css/main.7ac04071.chunk.css",
+    "main.js": "/zoomclone/static/js/main.08e8bc4c.chunk.js",
+    "main.js.map": "/zoomclone/static/js/main.08e8bc4c.chunk.js.map",
+    "runtime-main.js": "/zoomclone/static/js/runtime-main.567b983f.js",
+    "runtime-main.js.map": "/zoomclone/static/js/runtime-main.567b983f.js.map",
+    "static/js/2.89f959d6.chunk.js": "/zoomclone/static/js/2.89f959d6.chunk.js",
+    "static/js/2.89f959d6.chunk.js.map": "/zoomclone/static/js/2.89f959d6.chunk.js.map",
+    "index.html": "/zoomclone/index.html",
+    "static/css/main.7ac04071.chunk.css.map": "/zoomclone/static/css/main.7ac04071.chunk.css.map",
+    "static/js/2.89f959d6.chunk.js.LICENSE.txt": "/zoomclone/static/js/2.89f959d6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.567b983f.js",
+    "static/js/2.89f959d6.chunk.js",
+    "static/css/main.7ac04071.chunk.css",
+    "static/js/main.08e8bc4c.chunk.js"
+  ]
+}
