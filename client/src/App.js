@@ -45,8 +45,7 @@ const App = () => {
                 <Notifcations />
 
             </Options>
-            {/*videoPLAYER*/}
-            {/*options => notifications*/ }
+          
         </div>
     );
 }
